@@ -1,6 +1,5 @@
 #loading cleaned data
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 df = pd.read_csv("dataFIPS.csv", header = 0, dtype={"5-digit FIPS Code": str} )
 
