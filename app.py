@@ -23,10 +23,8 @@ counties["features"][0]
 
 #create new df that's grouped by county
 grouped = df.groupby(['5-digit FIPS Code', 'Name', 'State Abbreviation'], as_index=False).mean(numeric_only=True) #need the as_index=F bc groupby column gets put on diff col as index
-#display(grouped)
-#avg all values 
-display(grouped)
 
+#avg all values 
 groupedRace = df.groupby(['5-digit FIPS Code', 'Name', 'State Abbreviation', 'Race'], as_index=False).mean(numeric_only=True) #need the as_index=F bc groupby column gets put on diff col as index
 #display(grouped)
 #avg all values 
