@@ -47,7 +47,7 @@ app.layout = html.Div([
     html.Div([
         html.Div([dcc.Dropdown(
                 merged['Region'].unique(),
-                'West', #default
+                '', #default
                 id='drop_select_region'
             )
         ])
